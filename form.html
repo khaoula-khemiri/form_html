@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script type="module" src="./sc.js"></script> <script src="./sc.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QCM</title>
+</head>
+<body onload="functionload()">
+ <div class="container">
+     <header><h1>QCM</h1></header>
+     <ul class="liste-questions">
+          <!--question1-->
+         <li  class="question">
+             <p >Comment représenter un paragraphe en HTML?</p>
+             <ol class="liste-reponse">
+              <div class="items">
+                <input type="radio" class= "faux" id="span" name="fav_language" value="ul" >
+                 <li class="reponse">
+                     <label for="span" >span</label>
+                 </li>
+                </div>
+               <div class="items">
+                 <input type="radio" class= "faux"  id="h1" name="fav_language" value="h1">
+                 <li  class="reponse">
+                     <label for="h1" >h1</label>
+                 </li>
+              </div>
+              <div class="items">
+                 <input type="radio" class= "vrai" id="p" name="fav_language" value="p">
+                 <li  class="reponse">
+                      <label for="p"  >p</label>
+                 </li>
+             </div>
+             </ol>
+         </li> 
+
+         <!--question2-->
+         <li class="question">
+             <p >Comment représenter une liste en HTML?</p>
+             <ol class="liste-reponse">
+                <div class="items">
+                 <input type="radio" class= "vrai"  id="ul" name="list" value="ul" >
+                 <li  class="reponse">
+                     <label for="ul"  >ul</label>
+                  </li>
+                </div>
+                  <div class="items">
+                  <input type="radio" class= "faux"  id="l" name="list" value="h1">
+                  <li  class="reponse">
+                     <label for="l" >list</label>
+                 </li>
+                </div>
+                <div class="items">
+                 <input type="radio" class= "faux" id="div" name="list" value="p">
+                 <li  class="reponse">
+                     <label for="div">div</label>
+                 </li>
+                </div>
+              </ol> 
+         </li>
+
+          <!--question3-->
+          <li class="question">
+             <p >Quel attribut permet d'indiquer la destination d'un lien ?</p>
+             <ol class="liste-reponse">
+                <div class="items">
+                 <input type="radio"  class= "vrai"  id="href" name="attribut" value="ul" >
+                 <li  class="reponse">
+                     <label for="href" >href</label>
+                 </li>
+                 </div>
+                 <div class="items">
+                 <input type="radio"  class= "faux"  id="ol" name="attribut" value="h1">
+                 <li  class="reponse">
+                     <label for="ol" >ol</label>
+                 </li>
+                 </div>
+                 <div class="items">
+                 <input type="radio" class= "faux" id="data" name="attribut" value="data">
+                 <li  class="reponse">
+                     <label for="data" >data</label>
+                  </li>
+                  </div>
+              </ol> 
+          </li>
+
+         <!--question4-->
+          <li class="question">
+             <p >Quels sont les mots qui commencent par O ?</p>
+             <ol class="liste-reponse">
+                <div class="items">
+                 <input type="checkbox"  class= "vrai" id="Oasis" name="fav_language" value="ul" >
+                 <li  class="reponse">
+                     <label for="Oasis" >Oasis </label>
+                 </li>
+                  </div>
+                 <div class="items">
+                 <input type="checkbox"  class= "vrai" id="Obérer" name="fav_language" value="h1">
+                 <li  class="reponse">
+                     <label for="Obérer" >Obérer</label>
+                 </li>
+                 </div>
+                 <div class="items">
+                 <input type="checkbox"  class= "faux" id="affixe" name="fav_language" value="p">
+                 <li  class="reponse">
+                     <label for="affixe" >affixe</label>
+                 </li>
+                 </div>
+              </ol> 
+          </li>
+
+         <!--question5-->
+         <li class="question">
+             <p>Quel mot commence par un M ?</p>
+             <ol class="liste-reponse">
+                <div class="items">
+                 <input type="checkbox" class= "vrai" id="Maestro" name="fav_language" value="ul">
+                 <li  class="reponse">
+                     <label for="Maestro"  >Maestro</label>
+                  </li>
+                  </div>
+                  <div class="items">
+                 <input type="checkbox"  class= "vrai" id="Magnat" name="fav_language" value="h1">
+                 <li  class="reponse">
+                     <label for="Magnat" >Magnat</label>
+                 </li>
+                 </div>
+                 <div class="items">
+                 <input type="checkbox"   class= "faux" id="redoute" name="fav_language" value="p">
+                 <li  class="reponse">
+                     <label for="redoute"  >redoute</label>
+                  </li>
+                  </div>
+             </ol> 
+          </li>
+
+      </ul>
+
+      <!--les buttons-->
+        <div class="buttons-controle">
+            <button class="button-val"  onclick="validQCM()">Valider</button>
+            <button class="button-reco" onclick="recommencer()">Recommencer</button>
+        </div>
+
+ </div>
+
+</body>
+</html>
